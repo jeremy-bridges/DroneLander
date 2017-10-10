@@ -14,27 +14,6 @@ RequestedTheme="Dark">
 
             <x:Double x:Key="SliderOutsideTickBarThemeHeight">8</x:Double>
             <x:Double x:Key="SliderTrackThemeHeight">4</x:Double>
-            <Style x:Key="DisplayLabelStyle" TargetType="Label">
-                <Setter Property="TextColor" Value="White" />
-                <Setter Property="Margin">
-                    <Setter.Value>
-                        <OnPlatform x:TypeArguments="Thickness"
-                                    iOS="0,-10,0,0"
-                                    Android="0,-5,0,0"
-                                    WinPhone="0,-5,0,0" />
-                    </Setter.Value>
-                </Setter>
-                <Setter Property="FontSize" Value="48" />
-                <Setter Property="FontFamily">
-                    <Setter.Value>
-                        <OnPlatform x:TypeArguments="x:String">
-                            <OnPlatform.iOS>Digital-7Mono</OnPlatform.iOS>
-                            <OnPlatform.Android></OnPlatform.Android>
-                            <OnPlatform.WinPhone>/Assets/Fonts/Digital.ttf#Digital-7 Mono</OnPlatform.WinPhone>
-                        </OnPlatform>
-                    </Setter.Value>
-                </Setter>
-            </Style>
             
             <Style x:Key="KnobSliderStyle" TargetType="Slider">
                 <Setter Property="Background" Value="{ThemeResource SliderTrackFill}"/>
